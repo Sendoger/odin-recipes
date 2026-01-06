@@ -1,13 +1,25 @@
 body {
 	font-size: 24px;
+	box-sizing: border-box;
 }
+
+.center {
+	display: block;
+	margin: 50px auto;
+	width: 400px;
+	height: 400px;
+	max-width: 100%;
+}
+
 .right {
 	display: block;
-	margin-top: 10px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 0;
 	margin-left: auto;
-	margin-right: 100px;
 	width: 400px;
 	height: auto;
+	max-width: 60%;
 }
 
 .title {
@@ -16,32 +28,64 @@ body {
 }
 
 .description {
-	margin-top: -600px;
-	margin-left: 50px;
-	margin-bottom: 500px;
+	float: left;
+	height: auto;
+	display: block;
 	font-size: 34px;
-	margin-right: auto;
-	width: 900px;
+	margin: 10px auto 10px;
+	width: auto;
+	max-width: 100%;
 	border: 2px solid rgb(0 0 0);
 	background: #FAB57F;
 	padding: 10px;
+	box-sizing: content-box;
 }
 
 .ingredients {
-	margin-top: -480px;
+	float: left;
+	width: 500px;
+	height: auto;
+	max-width: 60%;
+	margin-left: -350px;
+	margin-top: 100px;
+	margin-bottom: 100px;
 	padding: 10px;
-	margin-left: 10px;
+	box-sizing: border-box;
+}
+
+.steps {
+	float: right;
+	width: 500px;
+	margin-right: 200px;
+	margin-top: 100px;
 }
 
 img {
-	width: 400px;
+	max-width:100%;
+	width:100%;
 	height: auto;
 	border: 2px solid rgb(0 0 0);
+	box-sizing:border-box;
 }
 
-p {
-	margin-bottom: 500px;
-	margin-top: -450px;
+p {	
 	font-weight: bold;
 	font-size: 36px;
+}
+
+#how {
+	float: right;
+	width: 300px;
+	text-align: center;
+	margin-right: 420px;
+	margin-bottom: -100px;
+	margin-top: 50px;
+}
+
+#ingredient {
+	float: left;
+	width: 300px;
+	margin-left:300px;
+	margin-bottom: 250px;
+	margin-top: 50px;
 }
